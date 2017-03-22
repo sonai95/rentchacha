@@ -1,0 +1,31 @@
+<html ng-app="mymodule">
+<script src="angular.min.js"></script>
+<script src="angular-route.min.js"></script>
+<script src="ajs.js"></script>
+<style>
+</style>
+<body ng-controller="mycontroller">
+{{10+20}}
+<table>
+<tr>
+<td>Your Input</td>
+<td><input type="text" ng-model="input"></td>
+</tr>
+<tr>
+<td>Our Output</td>
+<td><input type="text" ng-model="output"></td>
+</tr>
+<tr>
+<td>
+<input type="button" value="Change" ng-click="search(input)"/>
+</td>
+</tr>
+</table>
+<div>
+<a href="#/sm">SUVADEEP MAJUMDAR</a>
+<a href="#/dm">DIPTONIL MAJUMDAR</a>
+<a href="#/or">OTHERS</a>
+</div>
+<div ng-view></div>
+</body>
+</html>
